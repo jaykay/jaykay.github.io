@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://jaykay.github.io/kaffke/sitemap.xml 
