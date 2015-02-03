@@ -4,7 +4,7 @@
   <title><![CDATA[Kaffke.ws]]></title>
   <link href="http://kaffke.ws/atom.xml" rel="self"/>
   <link href="http://kaffke.ws/"/>
-  <updated>2015-02-03T16:00:56+01:00</updated>
+  <updated>2015-02-03T16:01:34+01:00</updated>
   <id>http://kaffke.ws/</id>
   <author>
     <name><![CDATA[Julian Kaffke]]></name>
@@ -20,7 +20,8 @@
     <id>http://kaffke.ws/blog/2015/02/03/running-octopress-on-coreos</id>
     <content type="html"><![CDATA[<p>Test post
  Oder so
-Dies das</p>
+Dies das
+Bla</p>
 ]]></content>
   </entry>
   
