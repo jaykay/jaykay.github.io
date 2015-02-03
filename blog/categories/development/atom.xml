@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Development | Kaffke.ws]]></title>
+  <link href="http://kaffke.ws/blog/categories/development/atom.xml" rel="self"/>
+  <link href="http://kaffke.ws/"/>
+  <updated>2015-02-03T15:33:26+01:00</updated>
+  <id>http://kaffke.ws/</id>
+  <author>
+    <name><![CDATA[Julian Kaffke]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Running Octopress on CoreOS]]></title>
+    <link href="http://kaffke.ws/blog/2015/02/03/running-octopress-on-coreos/"/>
+    <updated>2015-02-03T15:30:47+01:00</updated>
+    <id>http://kaffke.ws/blog/2015/02/03/running-octopress-on-coreos</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+</feed>
