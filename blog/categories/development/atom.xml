@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Development | Kaffke.ws]]></title>
   <link href="http://kaffke.ws/blog/categories/development/atom.xml" rel="self"/>
   <link href="http://kaffke.ws/"/>
-  <updated>2015-02-03T16:25:11+01:00</updated>
+  <updated>2015-02-03T16:25:50+01:00</updated>
   <id>http://kaffke.ws/</id>
   <author>
     <name><![CDATA[Julian Kaffke]]></name>
@@ -26,9 +26,8 @@
 
 <p>h3. Ensuring that everything is running</p>
 
-<p>{% codeblock [lang:language] [title] [url] [link text] %}
-code snippet
-{% endcodeblock %}</p>
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>code snippet</span></code></pre></td></tr></table></div></figure></p>
 ]]></content>
   </entry>
   
