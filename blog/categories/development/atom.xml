@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Development | Kaffke.ws]]></title>
   <link href="http://kaffke.ws/blog/categories/development/atom.xml" rel="self"/>
   <link href="http://kaffke.ws/"/>
-  <updated>2015-02-03T17:26:24+01:00</updated>
+  <updated>2015-02-03T18:25:17+01:00</updated>
   <id>http://kaffke.ws/</id>
   <author>
     <name><![CDATA[Julian Kaffke]]></name>
@@ -120,6 +120,23 @@ ExecStart=/usr/bin/docker run &ndash;name busybox1 busybox /bin/sh -c &ldquo;whi
 <p>[Install]
 WantedBy=multi-user.target
 {% endcodeblock %}</p>
+
+<p>$ sudo systemctl enable /etc/systemd/system/hello.service
+Created symlink from /etc/systemd/system/multi-user.target.wants/hello.service to /etc/systemd/system/hello.service.</p>
+
+<p>$ sudo systemctl start hello.service</p>
+
+<p>core@ip-172-31-20-92 ~ $ docker ps -a
+CONTAINER ID        IMAGE                       COMMAND                CREATED             STATUS                     PORTS               NAMES
+46d53ab5ddf0        busybox:buildroot-2014.02   &ldquo;/bin/sh -c &lsquo;while t   55 seconds ago      Up 55 seconds                                  busybox1
+a2bb40cdaf38        ubuntu:14.04                &rdquo;/bin/bash&#8221;            23 minutes ago      Exited (0) 7 minutes ago                       jovial_perlman</p>
+
+<p>core@ip-172-31-20-92 ~ $ journalctl -f -u hello.service
+&ndash; Logs begin at Tue 2015-02-03 13:29:00 UTC. &ndash;
+Feb 03 16:29:46 ip-172-31-20-92.eu-central-1.compute.internal docker[2387]: Hello World
+Feb 03 16:29:47 ip-172-31-20-92.eu-central-1.compute.internal docker[2387]: Hello World
+Feb 03 16:29:48 ip-172-31-20-92.eu-central-1.compute.internal docker[2387]: Hello World
+Feb 03 16:29:49 ip-172-31-20-92.eu-central-1.compute.internal docker[2387]: Hello World</p>
 ]]></content>
   </entry>
   
