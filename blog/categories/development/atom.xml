@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Development | Kaffke.ws]]></title>
   <link href="http://kaffke.ws/blog/categories/development/atom.xml" rel="self"/>
   <link href="http://kaffke.ws/"/>
-  <updated>2015-02-03T17:17:58+01:00</updated>
+  <updated>2015-02-03T17:20:29+01:00</updated>
   <id>http://kaffke.ws/</id>
   <author>
     <name><![CDATA[Julian Kaffke]]></name>
@@ -29,40 +29,43 @@
 <p>While you just by some clicks should have a running CoreOS cluster now, let&rsquo;s make sure you connect to it the right way:</p>
 
 <p>You should check, if your ssh-agent has the right key
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ ssh-add -l</span></code></pre></td></tr></table></div></figure></p>
+{% codeblock %}
+$ ssh-add -l
+{% endcodeblock %}</p>
 
 <p>This should output your key. If it doesn&rsquo;t, just add it by typing:
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ ssh-add ~/.ssh/&lt;YOUR KEY></span></code></pre></td></tr></table></div></figure></p>
+{% codeblock %}
+$ ssh-add ~/.ssh/<YOUR KEY>
+{% endcodeblock %}</p>
 
 <p>and check again.</p>
 
 <p>If everything is okay, then ssh into one of your instances via ssh
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ ssh core@&lt;ip address></span></code></pre></td></tr></table></div></figure></p>
+{% codeblock %}
+$ ssh core@<ip address>
+{% endcodeblock %}</p>
 
-<p><blockquote><p>Note: To interact with your CoreOS node, you have to use the <code>core</code> user.</p></blockquote></p>
+<p>{% blockquote %}
+Note: To interact with your CoreOS node, you have to use the <code>core</code> user.
+{% endblockquote %}</p>
 
 <p>Now you should be logged in. Yay!</p>
 
 <h4>Listing your machines</h4>
 
 <p>To list your machines in your cluster type:
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ fleetctl list-machines</span></code></pre></td></tr></table></div></figure></p>
+{% codeblock %}
+$ fleetctl list-machines
+{% endcodeblock %}</p>
 
 <p>Your output should look like this:
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>core@ip-172-31-20-92 ~ $ fleetctl list-machines
-</span><span class='line'>MACHINE   IP    METADATA
-</span><span class='line'>23bd9809&hellip; 172.31.2.187  -
-</span><span class='line'>3a27d588&hellip; 172.31.20.92  -
-</span><span class='line'>b427ca07&hellip; 172.31.20.93  -</span></code></pre></td></tr></table></div></figure></p>
+{% codeblock %}
+core@ip-172-31-20-92 ~ $ fleetctl list-machines
+MACHINE   IP    METADATA
+23bd9809&hellip; 172.31.2.187  -
+3a27d588&hellip; 172.31.20.92  -
+b427ca07&hellip; 172.31.20.93  -
+{% endcodeblock %}</p>
 
 <p>In the first column you&rsquo;ll see the abbreviated form of the hash representing your machine</p>
 
@@ -71,33 +74,41 @@
 <p>and the third one contains metadata (if present)</p>
 
 <p>You&rsquo;ll probably be a little impatient, so we&rsquo;ll start now by running a docker container:
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>core@ip-172-31-20-92 ~ $ sudo docker run -i -t ubuntu /bin/bash
-</span><span class='line'>Unable to find image &lsquo;ubuntu&rsquo; locally
-</span><span class='line'>Pulling repository ubuntu
-</span><span class='line'>5ba9dab47459: Download complete
-</span><span class='line'>511136ea3c5a: Download complete
-</span><span class='line'>27d47432a69b: Download complete
-</span><span class='line'>5f92234dcf1e: Download complete
-</span><span class='line'>51a9c7c1f8bb: Download complete
-</span><span class='line'>Status: Downloaded newer image for ubuntu:latest
-</span><span class='line'>root@a2bb40cdaf38:/#</span></code></pre></td></tr></table></div></figure></p>
+{% codeblock %}
+core@ip-172-31-20-92 ~ $ sudo docker run -i -t ubuntu /bin/bash
+Unable to find image &lsquo;ubuntu&rsquo; locally
+Pulling repository ubuntu
+5ba9dab47459: Download complete
+511136ea3c5a: Download complete
+27d47432a69b: Download complete
+5f92234dcf1e: Download complete
+51a9c7c1f8bb: Download complete
+Status: Downloaded newer image for ubuntu:latest
+root@a2bb40cdaf38:/#</p>
 
 <p>Yay a command prompt of the newly created ubuntu container :-)</p>
 
-<p>But that&rsquo;S definetly not the way you want to run docker containers on CoreOS.
+<p>But that&rsquo;s definetly not the way you want to run docker containers on CoreOS.
 Enter <em>systemd</em> and <em>fleet</em>.</p>
 
 <h3>systemd</h3>
+
+<p>{% codeblock %}
+[Unit]
+Description=MyApp
+After=docker.service
+Requires=docker.service</p>
+
+<p>[Service]
+TimeoutStartSec=0
+ExecStartPre=-/usr/bin/docker kill busybox1
+ExecStartPre=-/usr/bin/docker rm busybox1
+ExecStartPre=/usr/bin/docker pull busybox
+ExecStart=/usr/bin/docker run &ndash;name busybox1 busybox /bin/sh -c &ldquo;while true; do echo Hello World; sleep 1; done&rdquo;</p>
+
+<p>[Install]
+WantedBy=multi-user.target
+{% endcodeblock %}</p>
 ]]></content>
   </entry>
   
