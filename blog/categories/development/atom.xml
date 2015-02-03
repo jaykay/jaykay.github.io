@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Development | Kaffke.ws]]></title>
   <link href="http://kaffke.ws/blog/categories/development/atom.xml" rel="self"/>
   <link href="http://kaffke.ws/"/>
-  <updated>2015-02-03T16:27:08+01:00</updated>
+  <updated>2015-02-03T16:36:27+01:00</updated>
   <id>http://kaffke.ws/</id>
   <author>
     <name><![CDATA[Julian Kaffke]]></name>
@@ -24,10 +24,19 @@
 
 <p>I will write a tutorial on setting up CoreOS Clusters manually any time soon. For now I just assume you followed this <a href="https://coreos.com/docs/running-coreos/cloud-providers/ec2/%20Easily%20deploy%20CoreOS%20on%20EC2">Guide</a> to have a 3 machine CoreOS Cluster on EC2.</p>
 
-<h3>Ensuring that everything is running</h3>
+<h3>Let&rsquo;s start with the basics</h3>
 
-<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>code snippet</span></code></pre></td></tr></table></div></figure></p>
+<p>While you just by some clicks should have a running CoreOS cluster now, let&rsquo;s make sure you connect to it the right way:</p>
+
+<p>You should check, if your ssh-agent has the right key
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ssh-add -l</span></code></pre></td></tr></table></div></figure></p>
+
+<p>This should output your key. If it doesn&rsquo;t, just add it by typing:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ssh-add ~/.ssh/&lt;YOUR KEY></span></code></pre></td></tr></table></div></figure></p>
+
+<p>and check again</p>
 ]]></content>
   </entry>
   
