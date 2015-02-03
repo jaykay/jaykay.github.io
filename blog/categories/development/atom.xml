@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Development | Kaffke.ws]]></title>
   <link href="http://kaffke.ws/blog/categories/development/atom.xml" rel="self"/>
   <link href="http://kaffke.ws/"/>
-  <updated>2015-02-03T16:01:34+01:00</updated>
+  <updated>2015-02-03T16:02:42+01:00</updated>
   <id>http://kaffke.ws/</id>
   <author>
     <name><![CDATA[Julian Kaffke]]></name>
@@ -21,7 +21,8 @@
     <content type="html"><![CDATA[<p>Test post
  Oder so
 Dies das
-Bla</p>
+Bla
+test</p>
 ]]></content>
   </entry>
   
