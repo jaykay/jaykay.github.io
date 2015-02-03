@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Operations | Kaffke.ws]]></title>
   <link href="http://kaffke.ws/blog/categories/operations/atom.xml" rel="self"/>
   <link href="http://kaffke.ws/"/>
-  <updated>2015-02-03T16:22:18+01:00</updated>
+  <updated>2015-02-03T16:25:11+01:00</updated>
   <id>http://kaffke.ws/</id>
   <author>
     <name><![CDATA[Julian Kaffke]]></name>
@@ -22,7 +22,13 @@
 
 <p><em>CoreOS</em> is an operating system built to run <em>docker</em> containers with clustering and high availability in mind.</p>
 
-<p>I will write a tutorial on setting up CoreOS Clusters manually any time soon. For now I just assume you followed this <a href="https://coreos.com/docs/running-coreos/cloud-providers/ec2/%20Easily%20deploy%20CoreOS%20on%20EC2">Guide</a> to have a 3 machine CoreOS Cluster on EC2</p>
+<p>I will write a tutorial on setting up CoreOS Clusters manually any time soon. For now I just assume you followed this <a href="https://coreos.com/docs/running-coreos/cloud-providers/ec2/%20Easily%20deploy%20CoreOS%20on%20EC2">Guide</a> to have a 3 machine CoreOS Cluster on EC2.</p>
+
+<p>h3. Ensuring that everything is running</p>
+
+<p>{% codeblock [lang:language] [title] [url] [link text] %}
+code snippet
+{% endcodeblock %}</p>
 ]]></content>
   </entry>
   
