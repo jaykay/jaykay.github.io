@@ -4,7 +4,7 @@
   <title><![CDATA[Kaffke.ws]]></title>
   <link href="http://kaffke.ws/atom.xml" rel="self"/>
   <link href="http://kaffke.ws/"/>
-  <updated>2015-01-06T19:06:13+01:00</updated>
+  <updated>2015-02-03T15:29:59+01:00</updated>
   <id>http://kaffke.ws/</id>
   <author>
     <name><![CDATA[Julian Kaffke]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Running Octopress on CoreOS]]></title>
+    <link href="http://kaffke.ws/blog/2015/02/03/running-octopress-on-coreos/"/>
+    <updated>2015-02-03T15:29:25+01:00</updated>
+    <id>http://kaffke.ws/blog/2015/02/03/running-octopress-on-coreos</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Finally]]></title>
