@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Operations | Kaffke.ws]]></title>
   <link href="http://kaffke.ws/blog/categories/operations/atom.xml" rel="self"/>
   <link href="http://kaffke.ws/"/>
-  <updated>2015-02-03T16:52:54+01:00</updated>
+  <updated>2015-02-03T16:58:41+01:00</updated>
   <id>http://kaffke.ws/</id>
   <author>
     <name><![CDATA[Julian Kaffke]]></name>
@@ -45,6 +45,24 @@
 <p><blockquote><p>Note: To interact with your CoreOS node, you have to use the <code>core</code> user.</p></blockquote></p>
 
 <p>Now you should be logged in. Yay!</p>
+
+<h4>Listing your machines</h4>
+
+<p>To list your machines in your cluster type:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ fleetctl list-machines</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Your output should look like this:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>core@ip-172-31-20-92 ~ $ fleetctl list-machines
+</span><span class='line'>MACHINE   IP    METADATA
+</span><span class='line'>23bd9809&hellip; 172.31.2.187  -
+</span><span class='line'>3a27d588&hellip; 172.31.20.92  -
+</span><span class='line'>b427ca07&hellip; 172.31.20.93  -</span></code></pre></td></tr></table></div></figure></p>
 ]]></content>
   </entry>
   
