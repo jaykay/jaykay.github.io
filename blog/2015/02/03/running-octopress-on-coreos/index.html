@@ -155,7 +155,42 @@
 </span><span class='line'>b427ca07... 172.31.20.93  -</span></code></pre></td></tr></table></div></figure>
 
 
+<p>In the first column you&rsquo;ll see the abbreviated form of the hash representing your machine</p>
 
+<p>the second one is the IP of that machine</p>
+
+<p>and the third one contains metadata (if present)</p>
+
+<p>You&rsquo;ll probably be a little impatient, so we&rsquo;ll start now by running a docker container:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>core@ip-172-31-20-92 ~ $ sudo docker run -i -t ubuntu /bin/bash
+</span><span class='line'>Unable to find image 'ubuntu' locally
+</span><span class='line'>Pulling repository ubuntu
+</span><span class='line'>5ba9dab47459: Download complete
+</span><span class='line'>511136ea3c5a: Download complete
+</span><span class='line'>27d47432a69b: Download complete
+</span><span class='line'>5f92234dcf1e: Download complete
+</span><span class='line'>51a9c7c1f8bb: Download complete
+</span><span class='line'>Status: Downloaded newer image for ubuntu:latest
+</span><span class='line'>root@a2bb40cdaf38:/#</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Yay a command prompt of the newly created ubuntu container :-)</p>
+
+<p>But that&rsquo;S definetly not the way you want to run docker containers on CoreOS.
+Enter <em>systemd</em> and <em>fleet</em>.</p>
+
+<h3>systemd</h3>
 </div>
 
 
