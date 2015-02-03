@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Operations | Kaffke.ws]]></title>
   <link href="http://kaffke.ws/blog/categories/operations/atom.xml" rel="self"/>
   <link href="http://kaffke.ws/"/>
-  <updated>2015-02-03T17:20:29+01:00</updated>
+  <updated>2015-02-03T17:26:24+01:00</updated>
   <id>http://kaffke.ws/</id>
   <author>
     <name><![CDATA[Julian Kaffke]]></name>
@@ -92,6 +92,17 @@ root@a2bb40cdaf38:/#</p>
 Enter <em>systemd</em> and <em>fleet</em>.</p>
 
 <h3>systemd</h3>
+
+<p>Systemd is the service layer of the CoreOS concept. You can read more about systemd on the official page.</p>
+
+<p>core@ip-172-31-20-92 ~ $ ls -al /etc/systemd/system/
+total 8
+drwxr-xr-x 1 root root  98 Feb  3 13:29 .
+drwxr-xr-x 1 root root 252 Jan 28 09:30 ..
+lrwxrwxrwx 1 root root   9 Feb  3 13:29 user-configdrive.service -> /dev/null
+lrwxrwxrwx 1 root root   9 Feb  3 13:29 user-configvirtfs.service -> /dev/null</p>
+
+<p>$ sudo vim /etc/systemd/system/hello.service</p>
 
 <p>{% codeblock %}
 [Unit]
