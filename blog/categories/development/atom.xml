@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Development | Kaffke.ws]]></title>
   <link href="http://kaffke.ws/blog/categories/development/atom.xml" rel="self"/>
   <link href="http://kaffke.ws/"/>
-  <updated>2015-02-03T16:37:22+01:00</updated>
+  <updated>2015-02-03T16:42:52+01:00</updated>
   <id>http://kaffke.ws/</id>
   <author>
     <name><![CDATA[Julian Kaffke]]></name>
@@ -36,7 +36,15 @@
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>$ ssh-add ~/.ssh/&lt;YOUR KEY></span></code></pre></td></tr></table></div></figure></p>
 
-<p>and check again</p>
+<p>and check again.</p>
+
+<p>If everything is okay, then ssh into one of your instances via ssh
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ssh core@&lt;ip address></span></code></pre></td></tr></table></div></figure></p>
+
+<p><blockquote><p><strong>Note:</strong> To interact with your CoreOS node, you have to use the <code>core</code> user.</p></blockquote></p>
+
+<p>Now you should see the prompt:</p>
 ]]></content>
   </entry>
   
